@@ -18,16 +18,26 @@ app.use(cookieParser());
 
 // cors
 
+// const corsOptions = {
+//     origin: [
+//       "http://localhost:5173",
+//       "https://job-port1.netlify.app"
+//     ],
+//   credentials: true,
+// };
+
+// app.use(cors(corsOptions));
+
+
 const corsOptions = {
-    origin: [
-      "http://localhost:5173",
-      "https://job-port1.netlify.app"
-    ],
+  origin: [
+    "http://localhost:5173",
+    "https://job-portal-rho-tawny.vercel.app",
+  ],
   credentials: true,
 };
 
 app.use(cors(corsOptions));
-
 app.get("/", (req, res) => {
   res.send("hello");
 });
