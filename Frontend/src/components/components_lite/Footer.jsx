@@ -13,7 +13,7 @@ const Footer = () => {
         <p className="text-center md:text-left">
           © 2025{" "}
           <span className="font-medium text-gray-700">
-            Vinay Pandey
+            Uday
           </span>
           . All rights reserved.
         </p>
